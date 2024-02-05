@@ -1,0 +1,12 @@
+/* 
+primary: #6300ff;
+secondary: #b4aeff;
+confirmed: #846df0;
+dark: #404040;
+gray: #6d6d6d; 
+*/
+
+.bg-primary-color{
+    background-color: #6300ff;
+}
+
