@@ -22,14 +22,14 @@ h1 {
   flex: 1;
   text-align: center;
   margin: 5px;
-  color:#6500ef;
+  color:#6300ff;
   
 }
 
 .menu-button {
     font-size: 55px;
     border-radius: 50%;
-    background-color: #6500ef;
+    background-color: #6300ff;
     color: white;
     border: none;
     flex-direction: column;
@@ -60,7 +60,7 @@ h1 {
   .second-button {
     font-size: 18px;
     border-radius: 15px;
-    border: 3px solid #6500ef;
+    border: 3px solid #6300ff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -72,8 +72,9 @@ h1 {
   }
 /* hover */ 
 .menu-button:hover, .second-button:hover{
-  background-color: #a168fc;
+  background-color: #6d6d6d;
   color: white;
+  border: none;
 }
 /* active */ 
 .menu-button:active, .second-button:active {
