@@ -40,12 +40,17 @@ function enviarFormulario() {
 
 
   function validarDatos(email, password) {
+    const emailPattern = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+
     if (email === '' ||password === '' ) {
         document.getElementById("emailError").style.display = "block";
         document.getElementById("passwordError").style.display = "block";
     
         return false; 
-    }else{
+    } else if (!emailPattern.test(email)) {
+        emailError.style.display = "block";
+        return false;
+    } else{
         emailError.style.display = "none";
         passwordError.style.display = "none";
         return true; 
