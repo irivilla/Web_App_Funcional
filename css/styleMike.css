@@ -1,5 +1,5 @@
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 body {
@@ -95,3 +95,44 @@ h1 {
       } 
       }
      
+
+
+      /* Página de error */
+
+      .body2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 10px;
+      background-color: #f8f9fa; 
+  
+    }
+
+
+      .callToAction {
+        
+        text-align: center;
+        padding: 15px;
+        background-color: #ffffff; 
+        border: 1px solid #6300ff; 
+        border-radius: 10px; 
+        max-width: 400px; 
+    }
+    .containerButton {
+      display: flex;
+      justify-content: flex-end; 
+      margin-bottom: 5px; 
+      margin-right: 10px;
+  }
+  
+  .closeButton {
+      cursor: pointer;
+      font-size: 2.5em;
+      color: #6300ff;
+  }
+
+    .iconError {
+      color: #6300ff;
+      font-size: 35px;
+    }
