@@ -16,8 +16,9 @@ function showPassword() {
 
 
 
+document.getElementById('formularioInicioSesion').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita la recarga de la página por defecto
 
-function enviarFormulario() {
     const inicioForm = [];
 
     const email = document.getElementById('email').value;
@@ -34,9 +35,10 @@ function enviarFormulario() {
    
     if( validarDatos(email, password)){
         localStorage.setItem('email', email);
+        console.log("LLEGA A NAVEGAR")
         window.location.href = 'inicio.html';
     }
-  }
+});
 
 
   function validarDatos(email, password) {
