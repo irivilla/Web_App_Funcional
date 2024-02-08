@@ -12,12 +12,14 @@
     <body class="body3">
         <div class="container">
             <div class="containerButton">
-                <span class="closeButton" onclick="window.location.href = 'operar.html';">&times;</span>
+                <a href="operar.html"> 
+                <span class="closeButton">&times;</span>
+            </a>
             </div>
             <h1> Conversión de Moneda <br><i class="bi bi-cash iconConvert"></i></br></h1>
             <div class="label">
                 <label for="fromCurrency">De:</label>
-                <select id="fromCurrency">
+                <select class="select" id="fromCurrency">
                     <option value="EUR">EUR</option>
                     <option value="USD">USD</option>
                     <option value="GBP">GBP</option>
@@ -26,7 +28,7 @@
             </div>
             <div class="label">
                 <label class="label" for="toCurrency">A:</label>
-                <select id="toCurrency">
+                <select class="select" id="toCurrency">
                     <option value="EUR">EUR</option>
                     <option value="USD">USD</option>
                     <option value="GBP">GBP</option>
