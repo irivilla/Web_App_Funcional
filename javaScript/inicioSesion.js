@@ -35,7 +35,8 @@ document.getElementById('formularioInicioSesion').addEventListener('submit', fun
    
     if( validarDatos(email, password)){
         localStorage.setItem('email', email);
-        console.log("LLEGA A NAVEGAR")
+        console.log(localStorage);
+        console.log("LLEGA A NAVEGAR");
         window.location.href = 'inicio.html';
     }
 });
