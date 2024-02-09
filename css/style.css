@@ -20,12 +20,19 @@ grey: #6d6d6d;
     background-color: #6300ff;
     color: white;
     border: 2px solid white;
+    transition: background-color 0.3s, transform 0.3s;
 }
 .btn-primary-color:hover{
     background-color: white;
     color:  #6300ff;
     border: 2px solid #6300ff;
 }
+.btn-primary-color:active{
+    background-color: #280166;
+    color: white;
+    transform: scale(0.95);
+    transition: transform 0.1s;
+  }
 
 .btn-secondary-color{
     background-color: white;
