@@ -58,6 +58,7 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    top: -30px;
 }
 
 .imagen_tarjeta{
@@ -73,8 +74,10 @@
 }
 
 .slider_buttons{
+    position: relative;
     display: flex;
     justify-content: center;
+    top: -30px;
 }
 
 .boton_left{
@@ -116,6 +119,7 @@
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 20px;
+    top: -30px;
 }
 
 .menu_historial_item{

@@ -4,6 +4,7 @@ const btns = [document.getElementById('btn1'),document.getElementById('btn2'),do
 let index=0;
 let position=0;
 let scaled = [false,true,true,true];
+let scale = 0;
 
 var correo = localStorage.getItem('email');
 //correo = null;
@@ -54,3 +55,22 @@ function left(){
 function right(){
     Move((index+1)%4);
 }
+
+function handleResize(){
+    var windowWidth = window.innerWidth;
+    var scale_aux=scale;
+    if (windowWidth<576){
+        scale=0;
+    }else if (windowWidth<992){
+        scale=1;
+    }else if (windowWidth>992){
+        scale=2
+    }
+    if (!scale_aux==scale){
+        Move(index);
+    }
+}
+
+window.addEventListener('resize', function(){
+    handleResize();
+});
