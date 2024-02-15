@@ -74,7 +74,7 @@ function handleResize(){
     }else if (windowWidth>993){
         scale=2;
     }
-    if (!scale_aux==scale){
+    if (!(scale_aux==scale)){
         Move(index);
     }
 }
