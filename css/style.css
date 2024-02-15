@@ -78,3 +78,8 @@ a{
     color:#6300ff;
 }
 
+.center-content{
+    display: flex; !important
+    align-items: center;
+    justify-content: center;
+}
