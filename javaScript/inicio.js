@@ -6,16 +6,20 @@ let position=0;
 let scaled = [false,true,true,true];
 let scale = 0;
 
+//localStorage del email
 var correo = localStorage.getItem('email');
-//correo = null;
 if(!(correo==null)){
     document.getElementById('nombre').innerText=correo;
 }
 
+//Función para mover los elementos del slider en la posición correcta
+//Se trata de cambiar la propiedad left y scale de los elementos imagen_tarjeta
 function Move(pos){
     index = pos;
+    //Para cada tamaño de pantalla, las tarjetas se desplazarán una distancia diferente
     let positions = [-280*index-2,-330*index-2,-398*index-2];
     for(let k=0;k<positions.length;k++){
+        //Se consideran tres tamaños de pantalla, que obtenemos de una variable de css
         const slider_content = document.querySelector(".slider_content");
         const cssObj = window.getComputedStyle(slider_content);
         let tamano_pantalla = cssObj.getPropertyValue("--tamaño_pantalla");
@@ -23,9 +27,11 @@ function Move(pos){
             positionstr = positions[k].toString()+"px";
         }
     }
+    //Cambiamos la propiedad left sabiendo el tamaño de la pantalla
     for (let i=0;i<imagenes.length;i++){
         imagenes[i].style.left = positionstr;
     }
+    //Además, cambiamos el color de los botones inferiores y el scale de las tarjetas
     for(let j=0;j<btns.length;j++){
         if (pos==j){
             btns[j].style.setProperty('background-color','#ffd00d');
@@ -44,6 +50,7 @@ function Move(pos){
     }
 }
 
+//Estas funciones mueven las tarjetas una posición a la izquierda y a la derecha respectivamente
 function left(){
     if (index==0){
         Move(3);
@@ -56,6 +63,7 @@ function right(){
     Move((index+1)%4);
 }
 
+//Esta función comprueba que las tarjetas estén bien colocadas al reescalar la pantalla
 function handleResize(){
     var windowWidth = window.innerWidth;
     var scale_aux=scale;
