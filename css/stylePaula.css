@@ -281,7 +281,7 @@
     .slider_content{
         padding: 0px 40px 0px 40px;
         width: 450px;
-        left: -40px;
+        left: -20px;
         --tamaño_pantalla:2;
     }
     .imagen_tarjeta{
@@ -290,7 +290,7 @@
     .boton_left{
         position: relative;
         top: 90px;
-        left: -250px;
+        left: -210px;
     }
     .boton_right{
         position: relative;
