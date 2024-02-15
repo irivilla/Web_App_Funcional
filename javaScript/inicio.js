@@ -71,8 +71,8 @@ function handleResize(){
         scale=0;
     }else if (windowWidth<992){
         scale=1;
-    }else if (windowWidth>992){
-        scale=2
+    }else if (windowWidth>993){
+        scale=2;
     }
     if (!scale_aux==scale){
         Move(index);

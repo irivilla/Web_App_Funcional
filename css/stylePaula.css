@@ -211,12 +211,12 @@
     }
     .boton_left{
         position: relative;
-        top: 90px;
+        top: 60px;
         left: -150px;
     }
     .boton_right{
         position: relative;
-        top: 90px;
+        top: 60px;
         left: 140px;
     }
     .menu_historial{
@@ -250,12 +250,12 @@
     }
     .boton_left{
         position: relative;
-        top: 105px;
+        top: 75px;
         left: -160px;
     }
     .boton_right{
         position: relative;
-        top: 105px;
+        top: 75px;
         left: 180px;
     }
     .menu_historial{
@@ -289,12 +289,12 @@
     }
     .boton_left{
         position: relative;
-        top: 120px;
+        top: 90px;
         left: -250px;
     }
     .boton_right{
         position: relative;
-        top: 120px;
+        top: 90px;
         left: 210px;
     }
     .menu_historial{
