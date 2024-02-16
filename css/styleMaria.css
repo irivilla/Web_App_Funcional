@@ -23,6 +23,27 @@
     width: 100%;
 }
 
+.pb-150{
+    padding-bottom: 150px !important;
+}
+.pb-100{
+    padding-bottom: 100px !important;
+}
+
+.stickyMenu {
+    /* Estilo para el footer sticky */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.stickyMenu > div {
+    background-color: white;
+}
+
 
 /* Iconos inferiores*/
 
@@ -58,4 +79,138 @@
     width: 5px;
     background-color: #ffd00d;
     margin-top: 5px;
+}
+
+/* Ajuste de propiedades de los elementos anteriores dependiendo el tamaño de pantalla */
+
+@media screen and (max-width: 576px) {
+    .container_header{
+        left: -60px;
+    }
+    .text_lila h1{
+        font-size: 80%;
+    }
+    .logo_usuario{
+        left: 150%;
+    }
+    .slider_content{
+        padding: 0px 40px 0px 40px;
+        width: 340px;
+        left: -20px;
+        --tamaño_pantalla:0;
+    }
+    .imagen_tarjeta{
+        height: 150px;
+    }
+    .boton_left{
+        position: relative;
+        top: 60px;
+        left: -150px;
+        color: white;
+    }
+    .boton_right{
+        position: relative;
+        top: 60px;
+        left: 140px;
+        color: white;
+    }
+    .round_button{
+        width: 8px;
+        height: 8px;
+    }
+    .menu_historial{
+        width: 100%;
+        left: -40px;
+    }
+    .menu_pages {
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .container_header{
+        left: -90px;
+    }
+    .text_lila h1{
+        font-size: 100%;
+    }
+    .logo_usuario{
+        left: 380px;
+    }
+    .slider_content{
+        padding: 0px 50px 0px 50px;
+        width: 400px;
+        left: -10px;
+        --tamaño_pantalla:1;
+    }
+    .imagen_tarjeta{
+        height: 180px;
+    }
+    .boton_left{
+        position: relative;
+        top: 75px;
+        left: -160px;
+        color: white;
+    }
+    .boton_right{
+        position: relative;
+        top: 75px;
+        left: 180px;
+        color: white;
+    }
+    .round_button{
+        width: 9px;
+        height: 9px;
+    }
+    .menu_historial{
+        width: 120%;
+        left: -70px;
+    }
+    .menu_pages {
+        width: 60%; 
+    }
+}
+
+
+@media screen and (min-width: 993px) {
+    .container_header{
+        left: -120px;
+    }
+    .text_lila h1{
+        font-size: 120%;
+    }
+    .logo_usuario{
+        left: 1000%;
+    }
+    .slider_content{
+        padding: 0px 40px 0px 40px;
+        width: 450px;
+        left: -20px;
+        --tamaño_pantalla:2;
+    }
+    .imagen_tarjeta{
+        height: 220px;
+    }
+    .boton_left{
+        position: relative;
+        top: 90px;
+        left: -210px;
+    }
+    .boton_right{
+        position: relative;
+        top: 90px;
+        left: 210px;
+    }
+    .round_button{
+        width: 10px;
+        height: 10px;
+    }
+    .menu_historial{
+        width: 180%;
+        left: -160px;
+    }
+    .menu_pages {
+        width: 60%;
+    }
 }
