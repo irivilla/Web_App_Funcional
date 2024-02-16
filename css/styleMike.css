@@ -88,6 +88,9 @@ h1 {
     text-decoration: none; 
 }
 
+section {
+  margin-top: 20px;
+}
 /* hover */ 
 .menu-button:hover, .second-button:hover{
   background-color: #6d6d6d;
