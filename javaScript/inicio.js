@@ -17,6 +17,13 @@ if(!(correo==null)){
     document.getElementById('nombre').innerText=correo;
 }
 
+document.getElementById('logOutButton').addEventListener('click', ()=>{
+localStorage.removeItem('email');
+sessionStorage.removeItem('redireccionInicio');
+window.location.href = 'bienvenida.html';
+
+})
+
 //Función para mover los elementos del slider en la posición correcta
 //Se trata de cambiar la propiedad left y scale de los elementos imagen_tarjeta
 function Move(pos){

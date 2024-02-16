@@ -1,4 +1,5 @@
 const redireccionInicio = sessionStorage.getItem('redireccionInicio');
+console.log(sessionStorage)
 
 if (!redireccionInicio) {
   setTimeout(function() {

@@ -16,6 +16,7 @@ function showPassword() {
 
 
 
+
 document.getElementById('formularioInicioSesion').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita la recarga de la página por defecto
 
