@@ -53,6 +53,7 @@ function Move(pos){
             imagenes[j].style.setProperty('transform','scale(1)');
         }
     }
+    //Cambiamos el texto del historial por cada tarjeta
     for (let l=0;l<fechasids.length;l++){
         fechasids[l].innerText = fechas[index][l];
     }

@@ -230,11 +230,13 @@
         position: relative;
         top: 60px;
         left: -150px;
+        color: white;
     }
     .boton_right{
         position: relative;
         top: 60px;
         left: 140px;
+        color: white;
     }
     .round_button{
         width: 8px;
@@ -273,11 +275,13 @@
         position: relative;
         top: 75px;
         left: -160px;
+        color: white;
     }
     .boton_right{
         position: relative;
         top: 75px;
         left: 180px;
+        color: white;
     }
     .round_button{
         width: 9px;
