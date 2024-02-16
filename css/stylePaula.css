@@ -90,11 +90,13 @@
     border: none;
     background-color: white;
     color: #b7b7b7;
+    opacity: 30%;
 }
 .boton_right{
     border: none;
     background-color: white;
     color: #b7b7b7;
+    opacity: 30%;
 }
 
 .round_button{
@@ -188,7 +190,7 @@
 /* Iconos inferiores*/
 
 .menu_pages{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -249,13 +251,11 @@
         position: relative;
         top: 60px;
         left: -150px;
-        opacity: 30%;
     }
     .boton_right{
         position: relative;
         top: 60px;
         left: 140px;
-        opacity: 30%;
     }
     .round_button{
         width: 8px;
@@ -294,13 +294,11 @@
         position: relative;
         top: 75px;
         left: -160px;
-        opacity: 30%;
     }
     .boton_right{
         position: relative;
         top: 75px;
         left: 180px;
-        opacity: 30%;
     }
     .round_button{
         width: 9px;
