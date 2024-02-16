@@ -23,15 +23,32 @@
 }
 
 .logo_usuario{
+    display: flex;
+    flex-direction: row;
     position: absolute;
     top: 10px;
     right: 30px;
+    top: 3px;
 }
 
 .logo_usuario img{
     display: flex;
     justify-content: end;
     height: 40px;
+}
+
+.btn-primary-color{
+    border: none;
+    background-color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-primary-color:hover{
+    transform: scale(1);
+    transition: transform 0.1s;
+}
+.btn-primary-color:active{
+    transform: scale(0.85);
+    transition: transform 0.1s;
 }
 
 .text_lila{
@@ -170,23 +187,11 @@
     border: none;
     color: #6300ff;
 }
-.btn-primary-color{
-    background-color: #6300ff;
-    color: white;
-    border: 2px solid white;
-    transition: background-color 0.3s, transform 0.3s;
+
+.text_bold{
+    font-weight: 500;
 }
-.btn-primary-color:hover{
-    background-color: white;
-    color:  #6300ff;
-    border: 2px solid #6300ff;
-}
-.btn-primary-color:active{
-    background-color: #280166;
-    color: white;
-    transform: scale(0.95);
-    transition: transform 0.1s;
-  }
+
 /* Iconos inferiores*/
 
 .menu_pages{
@@ -231,12 +236,13 @@
 @media screen and (max-width: 576px) {
     .container_header{
         left: -60px;
+        width: 70%;
     }
     .text_lila h1{
         font-size: 80%;
     }
     .logo_usuario{
-        left: 150%;
+        left: 130%;
     }
     .slider_content{
         padding: 0px 40px 0px 40px;
@@ -274,6 +280,7 @@
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .container_header{
         left: -90px;
+        width: 70%;
     }
     .text_lila h1{
         font-size: 100%;
@@ -317,6 +324,7 @@
 @media screen and (min-width: 993px) {
     .container_header{
         left: -120px;
+        width: 50%;
     }
     .text_lila h1{
         font-size: 120%;
