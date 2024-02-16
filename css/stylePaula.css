@@ -47,10 +47,16 @@
 
 /*Slider*/
 
+
 .slider_title{
     position: relative;
-    margin-bottom: 0px;
-    top: -20px;
+    margin-bottom: 10px;
+    top: -10px;
+}
+
+.slider_title img{
+    width: 22px;
+    margin-right: 6px;
 }
 
 .slider_content{
@@ -92,9 +98,9 @@
 }
 
 .round_button{
-    width: 12px;
-    height: 12px;
+    display: flex;
     border-radius: 50%;
+    padding: 0;
     border: none;
     margin: 0 8px 0 8px;
     background-color: #b7b7b7;
@@ -119,7 +125,7 @@
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 20px;
-    top: -30px;
+    top: -15px;
 }
 
 .menu_historial_item{
@@ -129,9 +135,13 @@
     justify-content: space-between;
 }
 
+.extra_margin{
+    margin-top: 30px;
+}
+
 .rectangulo_gris{
     width: 100%;
-    height: 3px;
+    height: 2.5px;
     border-radius: 50px;
     background-color: #b7b7b7;
 }
@@ -199,13 +209,13 @@
 
 @media screen and (max-width: 576px) {
     .container_header{
-        left: -40px;
+        left: -60px;
     }
     .text_lila h1{
-        font-size: 120%;
+        font-size: 80%;
     }
     .logo_usuario{
-        left: 120%;
+        left: 150%;
     }
     .slider_content{
         padding: 0px 40px 0px 40px;
@@ -226,6 +236,10 @@
         top: 60px;
         left: 140px;
     }
+    .round_button{
+        width: 8px;
+        height: 8px;
+    }
     .menu_historial{
         width: 100%;
         left: -40px;
@@ -238,10 +252,10 @@
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .container_header{
-        left: -70px;
+        left: -90px;
     }
     .text_lila h1{
-        font-size: 120%;
+        font-size: 100%;
     }
     .logo_usuario{
         left: 380px;
@@ -264,6 +278,10 @@
         position: relative;
         top: 75px;
         left: 180px;
+    }
+    .round_button{
+        width: 9px;
+        height: 9px;
     }
     .menu_historial{
         width: 120%;
@@ -303,6 +321,10 @@
         position: relative;
         top: 90px;
         left: 210px;
+    }
+    .round_button{
+        width: 10px;
+        height: 10px;
     }
     .menu_historial{
         width: 180%;

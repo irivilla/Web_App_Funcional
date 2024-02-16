@@ -21,14 +21,15 @@
                     </div>
                     <div class="logo_usuario col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                         <button type="button" class="boton">
-                            <img src="../images/icon_profile.png">
+                            <img src="../images/icono-perfil-fidus.svg">
                         </button>
                     </div>
                 </div>
         </section>
         <section class="tarjetas">
             <div class="slider  text-center col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="text-center slider_title">
+                <div class="text-center slider_title text_gris">
+                    <img src="../images/icono-ojo-bloqueado-fidus.svg">
                     <a>Tus tarjetas</a>
                 </div>
                 <button class="boton_left" onclick="left()">&lt</button>
@@ -36,22 +37,22 @@
                 <div class="slider_content">
                     <div id="item1" class="slider_item">
                         <button class="slider_button" onclick="Move(0)">
-                            <img src="../images/tarjeta.png" class="imagen_tarjeta">
+                            <img src="../images/tarjeta-1-fidus.svg" class="imagen_tarjeta">
                         </button>
                     </div>
                     <div id="item2" class="slider_item">
                         <button class="slider_button" onclick="Move(1)">
-                            <img src="../images/tarjeta.png" class="imagen_tarjeta">
+                            <img src="../images/tarjeta-2-fidus.svg" class="imagen_tarjeta">
                         </button>
                     </div>
                     <div id="item3" class="slider_item">
                         <button class="slider_button" onclick="Move(2)">
-                            <img src="../images/tarjeta.png" class="imagen_tarjeta">
+                            <img src="../images/tarjeta-3-fidus.svg" class="imagen_tarjeta">
                         </button>
                     </div>
                     <div id="item4" class="slider_item">
                         <button class="slider_button" onclick="Move(3)">
-                            <img src="../images/tarjeta.png" class="imagen_tarjeta">
+                            <img src="../images/tarjeta-4-fidus.svg" class="imagen_tarjeta">
                         </button>
                     </div>
                 </div>
@@ -74,7 +75,7 @@
                 </div>
                 <div class="menu_historial_item">
                     <div class="menu_historial_subitem">
-                        <a>Hoy</a>
+                        <a id="fecha_1">Hoy</a>
                         <div class="text_gris">
                             <a>Compra 4</a>
                         </div>
@@ -85,7 +86,7 @@
                 </div>
                 <div class="menu_historial_item">
                     <div class="menu_historial_subitem">
-                        <a>Hoy</a>
+                        <a id="fecha_2">Hoy</a>
                         <div class="text_gris">
                             <a>Compra 3</a>
                         </div>
@@ -96,7 +97,7 @@
                 </div>
                 <div class="menu_historial_item">
                     <div class="menu_historial_subitem">
-                        <a>Ayer</a>
+                        <a id="fecha_3">Ayer</a>
                         <div class="text_gris">
                             <a>Compra 2</a>
                         </div>
@@ -107,7 +108,7 @@
                 </div>
                 <div class="menu_historial_item">
                     <div class="menu_historial_subitem">
-                        <a>Ayer</a>
+                        <a id="fecha_4">Ayer</a>
                         <div class="text_gris">
                             <a>Compra 1</a>
                         </div>
@@ -116,8 +117,11 @@
                         <a>&bull;&bull;&bull;&bull;€</a>
                     </div>
                 </div>
-                <div class="menu_historial_item">
+                <div class="menu_historial_item extra_margin">
                     Mis Ingresos y Gastos
+                </div>
+                <div class="menu_historial_item">
+                    <div class="rectangulo_gris"></div>
                 </div>
             </div>
     

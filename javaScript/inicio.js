@@ -5,6 +5,11 @@ let index=0;
 let position=0;
 let scaled = [false,true,true,true];
 let scale = 0;
+let fechasids = [document.getElementById('fecha_1'),document.getElementById('fecha_2'),document.getElementById('fecha_3'),document.getElementById('fecha_4')];
+let fechas = [['Hoy','Hoy','Ayer','Ayer'],
+              ['Hoy','Hoy','Hoy','Hoy'],
+              ['Hoy','Ayer','Ayer','Ayer'],
+              ['Ayer','Ayer','Ayer','Ayer']];
 
 //localStorage del email
 var correo = localStorage.getItem('email');
@@ -47,6 +52,9 @@ function Move(pos){
         }else{
             imagenes[j].style.setProperty('transform','scale(1)');
         }
+    }
+    for (let l=0;l<fechasids.length;l++){
+        fechasids[l].innerText = fechas[index][l];
     }
 }
 
