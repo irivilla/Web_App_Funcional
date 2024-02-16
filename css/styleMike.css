@@ -1,5 +1,6 @@
 * {
   font-family: 'Manrope', sans-serif;
+  text-decoration: none; 
 }
 
 body {
@@ -58,7 +59,7 @@ h1 {
 }
 
   .second-menu {
-    display: inline-block;
+    display: flex;
     margin: 0;
     text-align: center;
     align-items: center;
@@ -72,7 +73,8 @@ h1 {
     font-size: 18px;
     border-radius: 15px;
     border: 3px solid #6300ff;
-    flex-direction: column;
+    flex-direction: row;
+    text-decoration: none; 
     align-items: center;
     justify-content: center;
     height: 90px;
@@ -81,9 +83,11 @@ h1 {
     background-color: white;
     color: black;
     transition: background-color 0.3s, transform 0.3s;
-    text-decoration: none; 
+    
   }
-
+.bi-cash, .bi-star, .bi-envelope-paper, .bi-ban {
+  margin-right: 9px;
+}
   .second-button a {
     text-decoration: none; 
 }
@@ -210,6 +214,7 @@ section {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none; 
     transition: background-color 0.3s, transform 0.3s;
 }
 button:hover {
