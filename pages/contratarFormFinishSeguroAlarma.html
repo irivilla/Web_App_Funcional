@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Error</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/styleMike.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="/javaScript/javaScriptMike.js"></script>
+</head>
+
+<body class="body2">
+    <header>
+
+        <div class="callToAction">
+            <div class="containerButton">
+                <a href="contratar.html">
+                    <span class="closeButton">&times;</span>
+                </a>
+            </div>
+            <i class="bi bi-hdd-fill iconError"></i>
+            <p id="name"></p>
+            <p>Solicitud enviada</p>
+            <p>Gracias por confiar en <b>FIDUS.</b></p>
+            <p>Con los datos facilitados le llamaremos próximamente...</p>
+            <br>
+            <p>Redirigiendo automaticamente...</p>
+        </div>
+    </header>
+    <script>
+        // Verificar si hay un valor almacenado en LocalStorage para la variable "name"
+        var name = localStorage.getItem('name');
+
+        // Si hay un valor almacenado en LocalStorage para "email", rellenar el campo de entrada correspondiente
+        if (name) {
+            document.getElementById('name').innerHTML = 'Hola '+name;
+        }
+
+        // Esperar 5 segundos (5000 milisegundos) antes de redirigir
+        setTimeout(function () {
+            // Redirigir a la URL deseada
+            window.location.pathname = "/pages/contratar.html";
+        }, 5000); // 5000 milisegundos = 5 segundos
+
+        
+
+
+    </script>
+</body>
+
+</html>

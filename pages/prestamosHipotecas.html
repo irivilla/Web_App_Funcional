@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratar</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/styleMaria.css">
+    <script src="../javaScript/javaScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom text-center">
+                <a href="contratar.html">
+                    <img class="logo" src="../images/logoPrimary.png" />
+                </a>
+
+            </header>
+        </div>
+
+
+
+    </header>
+
+    <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom text-center">
+        <form id="contratarForm" style="width: 26rem;">
+            <!-- Name input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="name">Nombre Completo</label>
+                <input type="text" id="name" class="form-control" />
+            </div>
+
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="email">Correo Electronico</label>
+                <input type="email" id="mail" class="form-control" />
+            </div>
+
+            <!-- Telephone input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="telephone">Telefono</label>
+                <input type="text" id="tel" class="form-control" />
+            </div>
+
+            <!-- Monto input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="monto">Monto Solicitado</label>
+                <input type="monto" id="monto" class="form-control" />
+            </div>
+
+            <!-- Message input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="tipoPrestamo">Tipo de Préstamo o Hipoteca:</label>
+                <select class="form-control" id="tipoprestamo">
+                    <option value="prestamo">Préstamo Personal</option>
+                    <option value="hipoteca">Hipoteca</option>
+                </select>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                <label class="form-check-label" for="form4Example4">
+                    Send me a copy of this message
+                </label>
+            </div>
+
+            <!-- Submit button -->
+            <a href="#" id="submitBtn" class="btn btn-primary btn-block mb-4">Send</a>
+        </form>
+    </div>
+
+    <section class="center-content">
+        <div class="menu_pages text-center col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="menu_pages_item_active">
+                <a href="inicio.html" type="button" class="boton">
+                    <img src="../images/inicio-icono.svg">
+                </a>
+                <div class="yellow_dot"></div>
+            </div>
+            <div class="menu_pages_item">
+                <a href="operar.html" class="boton">
+                    <img src="../images/operar-icono.svg">
+                </a>
+            </div>
+            <div class="menu_pages_item">
+                <a href="contratar.html" class="boton">
+                    <img src="../images/contratar-icono.svg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/NKXW183UZHchgAFc7E9TzhV8gAoHV3UwUw64o"
+        crossorigin="anonymous"></script>
+
+    <script src="../javaScript/contratar.js"></script>
+    <script>
+        // Verificar si hay un valor almacenado en LocalStorage para la variable "email"
+        var email = localStorage.getItem('email');
+        var name = localStorage.getItem('name');
+        var tel = localStorage.getItem('tel');
+
+        // Si hay un valor almacenado en LocalStorage para "email", rellenar el campo de entrada correspondiente
+        if (email) {
+            document.getElementById('mail').value = email;
+        }
+        if (name) {
+            document.getElementById('name').value = name;
+        }
+        if (tel) {
+            document.getElementById('tel').value = tel;
+        }
+
+        document.getElementById('submitBtn').addEventListener('click', function (event) {
+            // Evitar que el enlace realice la acción predeterminada (navegar a otra página)
+            event.preventDefault();
+
+            // almacenar los valores de los campos del formulario de nombre y telefono en local storage
+            localStorage.setItem("name", document.getElementById('name').value);
+            localStorage.setItem("tel", document.getElementById('tel').value);
+
+            // Redirigir a la página contratarFormFinish.html con los valores de los campos como parámetros en la URL
+            window.location.href = 'contratarFormFinish.html';
+        });
+    </script>
+</body>
+
+</html>
