@@ -1,7 +1,8 @@
 * {
   font-family: 'Manrope', sans-serif;
+  text-decoration: none; 
 }
-
+/* Body */
 body {
   max-width: 1200;
  
@@ -46,23 +47,33 @@ h1 {
    
   }
 /* bottom menu */
-  .section {
-    flex: 1;
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 auto; 
+}
+
+  .second-menu {
+    display: flex;
+    margin: 0;
     text-align: center;
     align-items: center;
-    justify-content: center;
-  }
-  .second-menu {
-    margin-bottom: -30px;
-    text-align: center;
     font-size: 100px;
-
+    padding: 5px 20px;
+    text-decoration: white; 
   }
   .second-button {
+    display: flex;
+    margin-top: 0;
     font-size: 18px;
     border-radius: 15px;
     border: 3px solid #6300ff;
-    flex-direction: column;
+    flex-direction: row;
+    text-decoration: none; 
     align-items: center;
     justify-content: center;
     height: 90px;
@@ -71,8 +82,18 @@ h1 {
     background-color: white;
     color: black;
     transition: background-color 0.3s, transform 0.3s;
-    text-decoration: none; 
+    
   }
+.bi-cash, .bi-star, .bi-envelope-paper, .bi-ban {
+  margin-right: 9px;
+}
+  .second-button a {
+    text-decoration: none; 
+}
+
+section {
+  margin-top: 20px;
+}
 /* hover */ 
 .menu-button:hover, .second-button:hover{
   background-color: #6d6d6d;
@@ -192,6 +213,7 @@ h1 {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none; 
     transition: background-color 0.3s, transform 0.3s;
 }
 button:hover {
@@ -218,3 +240,38 @@ button:active {
   margin: 10px;
  }
  
+
+/* menú del final*/
+.menu_pages{
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px lightgray;
+  padding: 10px;  
+}
+
+.menu_pages_item img{
+  height: 40px;
+}
+
+.menu_pages_item_active{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_pages_item_active img{
+  height: 25px;
+}
+
+.yellow_dot{
+  height: 5px;
+  width: 5px;
+  background-color: #ffd00d;
+  margin-top: 5px;
+}
